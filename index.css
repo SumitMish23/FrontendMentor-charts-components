@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+body{
+    background-color: hsl(27, 66%, 92%);
+    font-family: 'DM Sans',sans-serif;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+.expenses-chart{
+    height: 100vh;
+}
+.expenses-chart-container{
+    width: 380px;
+}
+@media screen  and (max-width:992px){
+    .expenses-chart-container{
+        width: 85%;
+    }
+}
+.expenses-chart-graph{
+     background-color: white;
+     border-radius: 15px;
+}
+.expenses-chart-graph h3{
+   font-weight: 600;
+   font-size: 21px;
+}
+
+
+/* Amt Container top */
+.expenses-chart-amt {
+    border-radius: 15px;
+    background-color: hsl(10, 79%, 65%);
+}
+.expenses-chart-amt-text p{
+    font-size: 12px;
+} 
+.expenses-chart-amt-text h3{
+    font-size: 22px;
+} 
+.expenses-chart-amt button{
+    border-radius: 50px;
+    background-color: black;
+    height: 40px;
+    width: 40px;
+    border: none;
+}
+.expenses-chart-amt button::before{
+   content: "";
+   height: 38px;
+   width: 38px;
+   display: block;
+   position: relative;
+   right: 30px;
+   border:2px solid white;
+   border-radius: 50px;
+}
+
+/* Utilities */
+.border-line{
+    border-bottom: 1px solid grey;
+    border-radius: 1px;
+    opacity: 0.5;
+    position: relative;
+    top: 8px;
+}
+
+/* last text */
+.graph-timeline-text-amt h2{
+    font-weight:600;
+}
+.graph-timeline-text{
+    align-self: end;
+    font-size: 12px;
+}
+.graph-timeline-text p:first-child{
+    font-weight: 700;
+  text-align: right;
+}
