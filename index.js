@@ -3,7 +3,7 @@
 //fetching the data from data.json
 var dataAns = [];
 async function getData() {
-  const response = await fetch("../data.json");
+  const response = await fetch("data.json");
   const dataAns = await response.json();
   intializeChart(dataAns);
 }
